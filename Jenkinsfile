@@ -3,7 +3,7 @@ elifeLibrary {
         checkout scm
     }
 
-    elifeVariants(['lowest', 'default'], { dependencies ->
+    elifeVariants([/*'lowest',*/ 'default'], { dependencies ->
         elifeLocalTests "dependencies=${dependencies} ./project_tests.sh", ["build/${dependencies}-phpunit.xml"]
     })
 }
