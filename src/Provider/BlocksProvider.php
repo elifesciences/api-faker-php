@@ -22,6 +22,6 @@ final class BlocksProvider extends Base
 
         return array_map(function () {
             return $this->generator->paragraphBlockV1;
-        }, range($minimum, $maximum));
+        }, range(1, $this->generator->numberBetween($minimum, $maximum)));
     }
 }

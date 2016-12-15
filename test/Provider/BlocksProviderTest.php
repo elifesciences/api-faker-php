@@ -20,10 +20,10 @@ final class BlocksProviderTest extends ProviderTestCase
         }
 
         if ($expectedMinimum) {
-            $this->assertGreaterThanOrEqual($expectedMinimum, $blocks);
+            $this->assertGreaterThanOrEqual($expectedMinimum, count($blocks));
         }
         if ($expectedMaximum) {
-            $this->assertGreaterThanOrEqual($expectedMaximum, $blocks);
+            $this->assertLessThanOrEqual($expectedMaximum, count($blocks));
         }
     }
 
