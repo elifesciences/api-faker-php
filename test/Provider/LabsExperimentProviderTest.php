@@ -28,7 +28,7 @@ final class LabsExperimentProviderTest extends ProviderTestCase
      */
     public function it_creates_a_labs_experiment_v1()
     {
-        $this->validate($this->getFaker()->labsExperimentV1, '/elife/api/model/labs-experiment.v1.json');
+        $this->validate($this->getFaker()->labsExperimentV1, 'labs-experiment.v1.json');
     }
 
     /**
